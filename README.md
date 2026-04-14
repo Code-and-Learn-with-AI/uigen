@@ -65,3 +65,13 @@ Open [http://localhost:3000](http://localhost:3000)
 - Prisma with SQLite
 - Anthropic Claude AI
 - Vercel AI SDK
+
+
+# Setup CLAUDE.md
+
+```bash
+claude 
+
+/init
+```
+This will generate a .claude.md file in the root of the project.
