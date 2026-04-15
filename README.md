@@ -110,6 +110,34 @@ You might need to give permission each time. To avoid that, edit .claude/setting
 ```
 ==> will allow claude code to use the Playwright MCP server tools without asking for permission each time.
 
+### Using the Playwright MCP server tool to have a feedback loop when creating a compoennt
+
+Use this prompt 
+```markdown
+Your goal is to improve the component generation prompt at @src/lib/prompts/generation.tsx. Here is how:                                      
+                                                                                                                                                
+  1. Open a browser and navigate to localhost:3000                                                                                              
+  2. Request a basic component to be generated                                                                                                  
+  3. Reveiew the generated component and its source code
+  4. Identify areas of improvements
+  5. Update the prompt to produce better components going forward.
+
+  For now, only evaluate visual styling aspects. We don't want componenst generated that look like typical tailwindcss compnents. We xant
+  something more original.
+```
+
+# Add github actions
+
+Calude code has github integration. You can use it to create a github action 
+
+command: /install-github-app 
+
+![Alt text](.debug/github-actions.png)
+
+You will be asked to authenticate to github, and install claude there
+
+
+
 /init
 ```
 This will generate a .claude.md file in the root of the project.
