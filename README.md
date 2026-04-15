@@ -67,11 +67,48 @@ Open [http://localhost:3000](http://localhost:3000)
 - Vercel AI SDK
 
 
-# Useful claude commands
-## Setup CLAUDE.md
+# MCPs
+
+![MCPs](./.debug/mcp.png)
+
+One example of popular MCP server is Playwright MCP server
+
+To add to our claude code
 
 ```bash
-claude 
+claude mcp add playwright npx @playwright/mcp@latest 
+```
+
+This will add the Playwright MCP server to our claude code.
+
+Now you can ask claude code to go to a link in the browser, for example:
+```bash
+go to https://www.google.com
+
+Or
+
+Open the browser and navigate to localhost:3000
+```
+
+This will open the Google search page in the browser.
+
+You can also ask claude code to click on a button, for example:
+```bash
+click on the search button
+```
+
+You might need to give permission each time. To avoid that, edit .claude/settings.json and add the following:
+```json
+{
+    "permissions": {
+        "allow": [
+            "mcp_playwright"
+        ],
+        "deny": []
+    }
+}
+```
+==> will allow claude code to use the Playwright MCP server tools without asking for permission each time.
 
 /init
 ```
