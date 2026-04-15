@@ -87,3 +87,28 @@ You can also turn on plan mode (Shift Tab) to get him to think about the best pl
 
 Planning for wide, long tasks that require wide knowledge of your goals, steps and code base
 Thinking to tackle particular problems, issues or features
+
+
+## /login
+
+Whenever you need to login, use the /login command, sessions might need to be renewed periodically.
+
+## Escape
+
+Stops the current task and returns to the command line.
+
+## Escape Escape
+
+Equivalent to /rewind ==> allows you to go back to a previous state of the conversation.
+
+
+# Custom commands
+If your project does not contain a .claude directory, create it
+
+mkdir -p .claude/commands
+
+touch .claude/commands/audit.md  (audit is the name of the command)
+
+Another custom command that uses arguments: see .claude/commands/write_tests.md
+
+==> can be used for example as "/write_tests the use-auth.ts file in the hook  dir"                                                                                             
