@@ -67,7 +67,8 @@ Open [http://localhost:3000](http://localhost:3000)
 - Vercel AI SDK
 
 
-# Setup CLAUDE.md
+# Useful claude commands
+## Setup CLAUDE.md
 
 ```bash
 claude 
@@ -75,3 +76,14 @@ claude
 /init
 ```
 This will generate a .claude.md file in the root of the project.
+
+## Prompt hints for Claude to think up to ultrathink
+
+Tell him "Think", "Think more", "Think a lot", "think longer" or "UltraThink" to get him to think more deeply.
+
+You can also turn on plan mode (Shift Tab) to get him to think about the best plan of action.
+
+## Planning Vs Thinking
+
+Planning for wide, long tasks that require wide knowledge of your goals, steps and code base
+Thinking to tackle particular problems, issues or features
